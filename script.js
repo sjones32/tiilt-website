@@ -29,7 +29,7 @@ function filterWindows(group, b) {
     document.body.style.background = "white";
   }
 
-  document.getElementById("nav--primary").style.background = b.style.background;
+  // document.getElementById("nav--primary").style.background = b.style.background;
 
   // positions windows randomly horizontally and vertially using margin-top and margin-right
   for (let index = 0; index < toshow.children.length; index++) {
@@ -49,7 +49,7 @@ function filterWindows(group, b) {
     document.getElementsByClassName("grid__item")[index].style.marginLeft =
       String(
         Math.random() *
-        (document.getElementsByClassName("grid__col")[0].offsetWidth - document.getElementsByClassName("grid__item")[index].offsetWidth)
+        (document.getElementsByClassName("grid__col")[0].offsetWidth - document.getElementsByClassName("grid__item")[index].offsetWidth*1.2)
       ) + "px";
   }
 }
